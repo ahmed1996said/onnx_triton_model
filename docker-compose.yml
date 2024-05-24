@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  airis-tb:    
+    image: jackiexiao/tritonserver:22.06-onnx-py-cpu
+    volumes:
+      - <PATH_TO_model_onnx_FOLDER>:/models
+    ports:
+      - 8007:8000
+      - 8006:8002
+      - 8005:8003
+    command: tritonserver --model-repository=/models
+    restart: unless-stopped
+    network_mode: host
+
