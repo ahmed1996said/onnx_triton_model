@@ -1,4 +1,4 @@
-This repo contains a minimal example of running an [ONNX model](https://onnx.ai) served by [NVIDIA Triton Server](https://github.com/triton-inference-server/server) on a CPU-based setting.  More info about the folder structure and configurations for ONNX models can be found (here)[https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/model_repository.html#onnx-models].
+This repo contains a minimal example of running an [ONNX model](https://onnx.ai) served by [NVIDIA Triton Server](https://github.com/triton-inference-server/server) on a CPU-based setting.  More info about the folder structure and configurations for ONNX models can be found [here](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/model_repository.html#onnx-models).
 
 We provide a **randomly initialized** classifier in `onnx_model/` folder, and a Python script `intference_example.py` which illustrates how to make an HTTP request to the Triton server for inference.
 
@@ -48,8 +48,4 @@ Recieved logits: [[   36.51555  -377.1684    312.07822 -1028.188  ]]
 # Support
 
 
-If you encounter any problems, please do not hesitate to contact me at:
-
-```
-aalmahrooqi@m42.ae
-```
+If you encounter any problems, please do create a GitHub Issue
